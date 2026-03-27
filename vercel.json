@@ -1,0 +1,16 @@
+{
+    "rewrites": [
+        {
+            "source": "/api/proxy/gamelist/:path*",
+            "destination": "https://gamelist.coinbet91.com/:path*"
+        },
+        {
+            "source": "/api/proxy/cdn/:path*",
+            "destination": "https://cdn.coinbet91.com/:path*"
+        },
+        {
+            "source": "/(.*)",
+            "destination": "/index.html"
+        }
+    ]
+}

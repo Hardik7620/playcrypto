@@ -1,0 +1,220 @@
+name: playcrypto365
+description: A new Flutter project.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.0.0+26
+
+environment:
+  sdk: '>=3.5.0 <4.0.0'
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+  carousel_slider: ^5.1.1
+  provider: ^6.0.3
+  # webviewx: ^0.2.2
+  http: ^1.2.2
+  shared_preferences: ^2.0.15
+  flutter_svg: ^2.1.0
+  intl: ^0.20.2
+  animated_splash_screen: ^1.3.0
+  url_launcher: ^6.3.0
+  firebase_core: ^3.13.1
+  firebase_messaging: ^15.2.6
+  package_info_plus: ^8.3.0
+  dropdown_button2: ^2.3.9
+  flutter_localizations:
+    sdk: flutter
+  # uni_links: ^0.5.1
+  app_links: ^6.4.0
+  unique_identifier: ^0.4.0
+  advertising_id: ^2.5.0
+  flutter_app_installer: ^1.0.0
+  flutter_file_downloader: ^2.1.0
+  universal_html: ^2.2.4
+  chewie: ^1.10.0
+  google_fonts: ^8.0.2
+  scratcher: ^2.3.0
+  audioplayers: ^6.4.0
+  confetti: ^0.8.0
+  vibration: ^3.1.3
+  cached_network_image: ^3.3.1
+  shorebird_code_push: ^1.1.3
+  restart_app: ^1.2.1
+  flutter_fortune_wheel:
+    path: ./flutter_fortune_wheel
+  shimmer: ^3.0.0
+  youtube_player_iframe: ^5.2.1
+  dots_indicator: ^4.0.1
+  get_it: ^8.0.3
+  visibility_detector: ^0.4.0+2
+  firebase_analytics: ^11.4.6
+  video_player: ^2.7.2
+  firebase_in_app_messaging: ^0.8.1
+  lottie: ^3.1.2
+  marquee: ^2.2.3
+  pinput: ^5.0.1
+  share_plus_dialog:
+    path: ./packages/share_plus_dialog
+  pie_chart: ^5.4.0
+  csv: ^6.0.0
+  file_saver: ^0.2.12
+  qr_flutter: ^4.1.0
+  oktoast: ^3.4.0
+  logger: ^2.5.0
+
+  flutter_inappwebview: ^6.1.5
+  auto_size_text: ^3.0.0
+  skeletonizer: ^2.1.3
+  flutter_gen: ^5.10.0
+  rxdart: ^0.27.7
+  permission_handler: ^11.0.0
+  country_picker: ^2.0.27
+  page_transition: ^2.2.1
+
+analyzer:
+  hints:
+    unused_element: warning
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/winbajiadicon.jpg"
+
+
+
+dependency_overrides:
+  flutter_inappwebview_web:
+    git:
+      url: https://github.com/p-mazhnik/flutter_inappwebview
+      ref: web-fix
+      path: flutter_inappwebview_web
+
+  dynamic_color: 1.7.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^2.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+  generate: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/images/
+    - assets/images/promos/1_bg.png
+    - assets/images/promos/1_fg.png
+    - assets/images/promos/2_bg.png
+    - assets/images/promos/2_fg.png
+    - assets/images/promos/3_bg.png
+    - assets/images/promos/3_fg.png
+    - assets/images/promos/4_bg.png
+    - assets/images/promos/4_fg.png
+    - assets/images/promos/5_bg.png
+    - assets/images/promos/5_fg.png
+    - assets/images/promos/6_bg.png
+    - assets/images/promos/6_fg.png
+    - assets/images/promos/white_strip.png
+    - assets/sounds/
+    - assets/lotties/rebate_bg.json
+    - assets/images/banners/
+    - assets/allgames_list.json
+
+  #   - images/a_dot_ham.jpeg
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  fonts:
+    - family: Impact
+      fonts:
+        - asset: assets/fonts/impact.ttf
+
+    - family: SocialsIcons
+      fonts:
+        - asset: assets/fonts/SocialsIcons.ttf
+  #   - family: MontHeavy
+  #     fonts:
+  #       - asset: assets/fonts/mont-heavydemo.otf
+  #       - asset: assets/fonts/Poppins-Medium.ttf
+  #         weight: 500
+  #       - asset: assets/fonts/Poppins-Bold.ttf
+  #         weight: 700
+  #       - asset: assets/fonts/Poppins-SemiBold.ttf
+  #         weight: 600
+  #       - asset: assets/fonts/Poppins-ExtraBold.ttf
+  #         weight: 800
+  #       - asset: assets/fonts/Poppins-Thin.ttf
+  #         weight: 100
+  #       - asset: assets/fonts/Poppins-ExtraLight.ttf
+  #         weight: 200
+  #       - asset: assets/fonts/Poppins-Light.ttf
+  #         weight: 300
+  #       - asset: assets/fonts/Poppins-MediumItalic.ttf
+  #         weight: 500
+  #         style: italic
+  #       - asset: assets/fonts/Poppins-BoldItalic.ttf
+  #         weight: 700
+  #         style: italic
+  #       - asset: assets/fonts/Poppins-SemiBoldItalic.ttf
+  #         weight: 600
+  #         style: italic
+  #       - asset: assets/fonts/Poppins-ExtraBoldItalic.ttf
+  #         weight: 800
+  #         style: italic
+  #       - asset: assets/fonts/Poppins-ThinItalic.ttf
+  #         weight: 100
+  #         style: italic
+  #       - asset: assets/fonts/Poppins-ExtraLightItalic.ttf
+  #         weight: 200
+  #         style: italic
+  #       - asset: assets/fonts/Poppins-LightItalic.ttf
+  #         weight: 300
+  #         style: italic
+
+  #
+
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
